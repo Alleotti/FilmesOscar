@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes do Oscar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="imagemHeader">
+            <img src="logo.jpg" class="LogoFestivalHeader">
+        </div>
+        <section class="titulo-da-pagina" id="titulo-da-pagina">
+            <h1>Filmes do Oscar</h1>
+            <p class="subtitulo-header" id="subtitulo-header">Consulte filmes, atores e diretores ganharados do Oscar nos últimos anos</p>
+        </section>
+        <section class="pesquisaHeader" id="pesquisaHeader">
+            <input type="text" placeholder="Pesquise aqui" id="campo-pesquisa">
+            <button onclick="pesquisaFilmes()" class="botaoPesquisa"> Pesquisar </button>
+        </section>
+    </header>
+    <main>
+        <section class="ultimas-noticias" id="ultimas-noticias">
+            <h3>Últimas Noticias</h3>
+            <div class="noticia" id="noticia">
+                <p class="titulo-noticia" id="titulo-noticia"><strong>Fernanda Torres é cotada para o Oscar de Melhor Atriz</strong></p>
+                <p class="subtitulo-noticia" id="subtitulo-noticia">Atuação da atriz no filme 'Ainda Estou Aqui' recebe diversos elogios da imprensa internacional.</p>
+                <a class="link-noticia" id="link-noticia" href="https://exame.com/pop/oscar-fernanda-torres-e-cotada-pela-imprensa-internacional-para-premio-de-melhor-atriz/">Mais informações</a>
+            </div>
+            <div class="noticia" id="noticia">
+                <p class="titulo-noticia" id="titulo-noticia"><strong>'Coringa 2' recebe críticas negativas após exibição em Veneza</strong></p>
+                <p class="subtitulo-noticia" id="subtitulo-noticia">Filme teve críticas internacionais mistas com 60% de aprovação no Rottem Tomatoes.</p>
+                <a class="link-noticia" id="link-noticia" href="https://g1.globo.com/pop-arte/cinema/noticia/2024/09/05/coringa-delirio-a-dois-estreia-no-festival-de-veneza-com-criticas-negativas.ghtml">Mais informações</a>
+            </div>
+            <div class="noticia" id="noticia">
+                <p class="titulo-noticia" id="titulo-noticia"><strong>'The Brutalist', com Adrien Brody é aplaudido por 13 minutos em Veneza.</strong></p>
+                <p class="subtitulo-noticia" id="subtitulo-noticia">Filme de 3h30 já é considerado um dos favoritos do festival</p>
+                <a class="link-noticia" id="link-noticia" href="https://www.termometrooscar.com/cinema-eacute-tudo-isso---blog/festival-de-veneza-2024-the-brutalist-com-adrien-brody-e-aplaudido-por-13-minutos-e-ja-e-considerado-um-dos-melhores-filmes-do-festival">Mais informações</a>
+            </div>
+        </section>
+        <section class="filmes-indicados" id="filmes-indicados">
+            <h4>Filmes indicados ao Oscar 2023</h4>
+            <div class="poster-indicados" id="poster-indicados">
+                <button class="botao-poster" id="botao-poster" onclick="botaoPoster(`Tudo em Todo Lugar ao Mesmo Tempo`)">
+                    <img src="Poster/Tudo em Todo Lugar ao Mesmo Tempo.jpg" class="posterFilmes" alt="Poster do filme Tudo em Todo Lugar Ao Mesmo Tempo">
+                </button>
+                <button class="botao-poster" id="botao-poster" onclick="botaoPoster(`Avatar O Caminho da Água`)">
+                    <img src="Poster/Avatar O Caminho da Água.jpg" class="posterFilmes" alt="Poster do filme Avatar: O Caminho da Água">
+                </button>
+                <button class="botao-poster" id="botao-poster" onclick="botaoPoster(`Elvis`)">
+                    <img src="Poster/Elvis.jpg" class="posterFilmes" alt="Poster do filme Elvis">
+                </button>
+                <button class="botao-poster" id="botao-poster" onclick="botaoPoster(`Nada de Novo no Front`)">
+                    <img src="Poster/Nada de Novo no Front.jpg" class="posterFilmes" alt="Poster do filme Nada de Novo no Front">
+                </button>
+                <button class="botao-poster" id="botao-poster" onclick="botaoPoster(`Os Banshees de Inisherin`)">
+                    <img src="Poster/Os Banshees de Inisherin.jpg" class="posterFilmes" alt="Poster do filme Nada de Novo no Front">
+                </button>
+            </div>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa" hidden>
+        </section>
+        <section class="botao" id="botao" hidden>
+            <button class="botao-retorno" id="botao-retorno" onclick="voltarHome()">Voltar</button>
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Filmes do Oscar. Todos os direitos reservados</p>
+
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
